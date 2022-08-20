@@ -24,7 +24,7 @@ import javax.annotation.Resource;
 public class ShopController {
 
     @Resource
-    public IShopService shopService;
+    private IShopService shopService;
 
     /**
      * 根据id查询商铺信息
@@ -34,7 +34,8 @@ public class ShopController {
      */
     @GetMapping("/{id}")
     public Result queryShopById(@PathVariable("id") Long id) {
-        return Result.ok(shopService.getById(id));
+
+        return shopService.queryShopById(id);
     }
 
     /**
