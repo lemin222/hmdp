@@ -18,6 +18,9 @@ spring:
         min-idle: 1
         time-between-eviction-runs: 10s
   jackson:
+    local-date-time-format: yyyy-MM-dd HH:mm:ss
+    local-date-format: yyyy-MM-dd
+    local-time-format: HH:mm:ss
     default-property-inclusion: non_null # JSON处理时忽略非空字段
 mybatis-plus:
   type-aliases-package: com.hmdp.entity # 别名扫描包

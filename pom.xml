@@ -57,6 +57,14 @@
             <artifactId>hutool-all</artifactId>
             <version>5.7.17</version>
         </dependency>
+        <!--       localdateTime序列化异常-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.fasterxml.jackson.datatype</groupId>-->
+        <!--            <artifactId>jackson-datatype-jsr353</artifactId>-->
+        <!--            <version>2.11.0</version>-->
+        <!--            <type>bundle</type>-->
+        <!--        </dependency>-->
+
     </dependencies>
 
     <build>
